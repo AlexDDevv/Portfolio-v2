@@ -1,0 +1,51 @@
+#about {
+    @include center;
+    padding: 0 20px;
+
+    .about {
+        width: 60%;
+
+        .presentation {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            .hello {
+                color: $titleColor;
+                font-family: $titleFont;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .name {
+                color: $titleColor;
+                font-family: $titleFont;
+                font-size: clamp(3rem,5vw + 1rem,6.2rem);
+                padding-left: 10px;
+            }
+            .description {
+                color: $textColor;
+                font-family: $bodyFont;
+                font-size: 1.2rem;
+                line-height: 30px;
+                padding-left: 10px;
+
+                strong {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .avatar {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
