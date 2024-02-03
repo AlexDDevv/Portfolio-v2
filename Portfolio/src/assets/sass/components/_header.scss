@@ -1,0 +1,35 @@
+.header {
+    @include between;
+    margin-bottom: 100px;
+
+    .header-logo {
+        height: 60px;
+        width: 60px;
+        background: $textColor;
+        border-radius: 50%;
+        padding: 10px;
+        @include center;
+
+        span {
+            color: $bgBtn;
+            font-family: $bodyFont;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+    .navbar {
+        .nav-list {
+            display: flex;
+            gap: 30px;
+
+            .nav-li {
+                a {
+                    text-decoration: none;
+                    color: $textColor;
+                    font-family: $bodyFont;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
