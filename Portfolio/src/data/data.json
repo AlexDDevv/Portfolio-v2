@@ -1,0 +1,22 @@
+[
+    {
+        "link": "https://github.com/AlexDDevv",
+        "icon": "fa-brands fa-github",
+        "content": "Github"
+    },
+    {
+        "link": "https://www.instagram.com/sport.devweb/",
+        "icon": "fa-brands fa-instagram",
+        "content": "Instagram"
+    },
+    {
+        "link": "https://twitter.com/Sport_DevWeb",
+        "icon": "fa-brands fa-x-twitter",
+        "content": "Twitter"
+    },
+    {
+        "link": "mailto:alexddevs@gmail.com",
+        "icon": "fa-solid fa-envelope",
+        "content": "alexddevs@gmail.com"
+    }
+]
