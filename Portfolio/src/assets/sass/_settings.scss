@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+$titleFont: 'Roboto', sans-serif;
+$bodyFont: 'Lato', sans-serif;
+$bodyBg: #1B1525;
+$bgBtn: #6E56CF;
+$textBtn: #E2DDFE;
+$titleColor: #BAA7FF;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: $bodyBg;
+}
