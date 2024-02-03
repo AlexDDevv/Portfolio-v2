@@ -4,7 +4,7 @@ $titleFont: 'Roboto', sans-serif;
 $bodyFont: 'Lato', sans-serif;
 $bodyBg: #1B1525;
 $bgBtn: #6E56CF;
-$textBtn: #E2DDFE;
+$textColor: #E2DDFE;
 $titleColor: #BAA7FF;
 
 @mixin center {
@@ -22,7 +22,9 @@ $titleColor: #BAA7FF;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 body {
     background: $bodyBg;
+    padding: 30px 150px;
 }
