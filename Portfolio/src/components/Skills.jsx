@@ -10,6 +10,9 @@ export default function Skills() {
             "techno": "fa-brands fa-css3-alt",
         },
         {
+            "techno": "fa-brands fa-sass",
+        },
+        {
             "techno": "fa-brands fa-square-js",
         },
         {
