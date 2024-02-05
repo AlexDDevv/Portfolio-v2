@@ -9,8 +9,11 @@ export default function About() {
             <div className="about">
                 <div className="presentation">
                     <p className="hello">Bonjour !</p>
-                    <h1 className="name">Alexis <br /> Delporte,</h1>
-                    <p className="description"><strong>Développeur web</strong> accès front-end en reconversion. Autodidacte, j'aime créer des projets esthétiques et utiles. Voulant un peu plus de structure et de challenge, j'ai suivi la formation d'intégrateur web d'OpenClassrooms. En quête d'expérience professionnelle, j'aimerais découvrir le travail en équipe et continuer à apprendre et à grandir dans ce domaine passionnant.</p>
+                    <div className="name-container">
+                        <h1 className='name'>Alexis</h1>
+                        <h2 className='name fam'>Delporte,</h2>
+                    </div>
+                    <p className="description"><strong>Développeur web</strong> front-end en reconversion. Autodidacte, j'aime créer des projets esthétiques et utiles. Voulant un peu plus de structure et de challenge, j'ai suivi la formation d'intégrateur web d'OpenClassrooms. En quête d'expérience professionnelle, de découvrir le travail en équipe, de continuer à apprendre et à grandir dans ce domaine passionnant.</p>
                 </div>
                 <div className="my-links">
                     {data.map((item, i) => (

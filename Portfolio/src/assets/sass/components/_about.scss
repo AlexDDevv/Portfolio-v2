@@ -1,6 +1,7 @@
 #about {
     @include center;
     padding: 0 20px;
+    margin-bottom: 100px;
 
     .about {
         width: 60%;
@@ -16,19 +17,33 @@
                 font-family: $titleFont;
                 font-size: 1.5rem;
                 font-weight: 700;
+                opacity: 0;
+                transform: translateY(-30px);
+                animation: appear 0.5s 0.1s ease-out forwards;
             }
-            .name {
-                color: $titleColor;
-                font-family: $titleFont;
-                font-size: clamp(3rem,5vw + 1rem,6.2rem);
-                padding-left: 10px;
-            }
+            .name-container {
+                .name {
+                    color: $titleColor;
+                    font-family: $titleFont;
+                    font-size: clamp(3rem,5vw + 1rem,6.2rem);
+                    padding-left: 10px;
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    animation: appear 0.5s 0.3s ease-out forwards;
+                }
+                .fam {
+                    animation-delay: 0.5s;
+                }
+            } 
             .description {
                 color: $textColor;
                 font-family: $bodyFont;
                 font-size: 1.2rem;
                 line-height: 30px;
                 padding-left: 10px;
+                opacity: 0;
+                transform: translateY(-30px);
+                animation: appear 0.5s 0.7s ease-out forwards;
 
                 strong {
                     font-size: 1.5rem;
@@ -40,6 +55,9 @@
         width: 40%;
         display: flex;
         justify-content: flex-end;
+        opacity: 0;
+        transform: translateX(50px);
+        animation: appear 0.5s 0.7s ease-out forwards;
 
         img {
             width: 250px;
