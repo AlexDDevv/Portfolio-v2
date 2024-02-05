@@ -1,6 +1,9 @@
 .header {
     @include between;
     margin-bottom: 100px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appear 0.5s 1s ease-out forwards;
 
     .header-logo {
         height: 60px;
