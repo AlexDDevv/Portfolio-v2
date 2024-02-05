@@ -1,0 +1,61 @@
+#skills {
+    text-align: center;
+
+    .skills {
+        color: $titleColor;
+        font-family: $titleFont;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .techno-container {
+        padding: 0 50px;
+
+        .techno-list {
+            @include center;
+            flex-wrap: wrap;
+            gap: 100px;
+
+            .techno {
+                color: $textColor;
+                font-size: 5rem;
+                opacity: 0;
+                transform: translateY(50px);
+
+                &.active {
+                    animation: appear 0.5s ease-out forwards;
+
+                    &:nth-child(2) {
+                        animation-delay: 0.1s;
+                    }
+                    &:nth-child(3) {
+                        animation-delay: 0.2s;
+                    }
+                    &:nth-child(4) {
+                        animation-delay: 0.3s;
+                    }
+                    &:nth-child(5) {
+                        animation-delay: 0.4s;
+                    }
+                    &:nth-child(6) {
+                        animation-delay: 0.5s;
+                    }
+                }
+            }
+            .ps {
+                background: $textColor;
+                border-radius: 10px;
+                color: $bodyBg;
+                font-family: $bodyFont;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 10px;
+                @include center;
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
