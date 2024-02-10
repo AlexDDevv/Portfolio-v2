@@ -18,5 +18,10 @@
         "link": "mailto:alexddevs@gmail.com",
         "icon": "fa-solid fa-envelope",
         "content": "alexddevs@gmail.com"
+    },
+    {
+        "link": "",
+        "icon": "fa-solid fa-file",
+        "content": "Mon CV"
     }
 ]
