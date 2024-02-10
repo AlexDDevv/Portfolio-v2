@@ -1,0 +1,16 @@
+.span-container {
+    @include center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    .span-project {
+        background: white;
+        border-radius: 50px;
+        color: black;
+        font-family: $bodyFont;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 3px 15px;
+    }
+}
