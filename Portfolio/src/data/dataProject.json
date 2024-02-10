@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Kasa",
+        "description": "Refonte du site web Kasa avec une stack JS plus récente utilisant React et Node.js.",
+        "techno": [
+            "React",
+            "Node",
+            "Sass",
+            "Responsive Web Design",
+            "Figma"
+        ],
+        "repo": "https://github.com/AlexDDevv/P8-Kasa",
+        "website": "https://p8-kasa-sigma.vercel.app/"
+    },
+    {
+        "title": "Sophie Bluel",
+        "description": "Conception du site portfolio d'une architecte d'intérieur.",
+        "techno": [
+            "HTML 5",
+            "CSS 3",
+            "Javascript",
+            "Node.js",
+            "Swagger",
+            "JWT",
+            "Figma"
+        ],
+        "repo": "https://github.com/AlexDDevv/P6-Portefolio-Sophie-Bluel"
+    },
+    {
+        "title": "OhMyFood",
+        "description": "Site répertoriant les menus de restaurants gastronomiques.",
+        "techno": [
+            "HTML 5",
+            "Sass",
+            "Animations css",
+            "Responsive Web Design"
+        ],
+        "repo": "https://github.com/AlexDDevv/P4-OhMyFood",
+        "website": "https://p4-oh-my-food.vercel.app/"
+    }
+]
