@@ -1,0 +1,37 @@
+{
+    "tech": [
+        {
+            "techno": "fa-brands fa-html5"
+        },
+        {
+            "techno": "fa-brands fa-css3-alt"
+        },
+        {
+            "techno": "fa-brands fa-sass"
+        },
+        {
+            "techno": "fa-brands fa-square-js"
+        },
+        {
+            "techno": "fa-brands fa-react"
+        },
+        {
+            "techno": "fa-brands fa-node-js"
+        },
+        {
+            "techno": "fa-brands fa-github"
+        },
+        {
+            "techno": "ps",
+            "content": "Ps"
+        }
+    ],
+    "qualities" : [
+        "▸ Accessibilité", 
+        "▸ Optimisation", 
+        "▸ Référencement SEO", 
+        "▸ Autonome", 
+        "▸ Curieux", 
+        "▸ Investi"
+    ]
+}
