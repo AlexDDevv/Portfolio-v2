@@ -1,6 +1,5 @@
 import React from 'react'
 import SpanProject from './SpanProject'
-import datas from "../data/dataProject.json"
 
 export default function Projects({ title, description, repo, site, techno }) {
     return (
