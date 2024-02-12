@@ -1,0 +1,45 @@
+.footer {
+    @include center;
+
+    .footer-content {
+        padding: 50px 0;
+
+        .footer-list {
+            @include center;
+            gap: 50px;
+
+            .footer-li {
+                opacity: 0;
+                transform: translateY(-50px);
+
+                &.active-link {
+                    animation: appear 0.3s ease-out forwards;
+
+                    &:nth-child(2) {
+                        animation-delay: 0.1s;
+                    }
+                    &:nth-child(3) {
+                        animation-delay: 0.2s;
+                        
+                    }
+                    &:nth-child(4) {
+                        animation-delay: 0.3s;
+
+                    }
+                }
+
+                .footer-link {
+                    color: $textColor;
+                    transition: 0.2s;
+                    
+                    &:hover {
+                        color: rgba(226, 221, 254, 0.7);
+                    }
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
