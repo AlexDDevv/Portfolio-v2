@@ -6,7 +6,7 @@ export default function Projects({ title, description, repo, site, techno }) {
         <div className="project-container">
             <div className="title-container">
                 <h3 className="title-project">{title}</h3>
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                <i className="fa-solid fa-arrow-up-right-from-square" title='Voir plus'></i>
             </div>
             <div className="description-container">
                 <p className="description-project">{description}</p>
@@ -20,9 +20,9 @@ export default function Projects({ title, description, repo, site, techno }) {
                 ))}
             </div>
             <div className="redirection">
-                <a href={repo} target='_blank'><i className="fa-brands fa-github"></i></a>
+                <a href={repo} target='_blank' title='Lien Github'><i className="fa-brands fa-github"></i></a>
                 {site && (
-                    <a href={site} target='_blank'><i className="fa-solid fa-link"></i></a>
+                    <a href={site} target='_blank' title='Lien du site'><i className="fa-solid fa-link"></i></a>
                 )}
             </div>
         </div>
