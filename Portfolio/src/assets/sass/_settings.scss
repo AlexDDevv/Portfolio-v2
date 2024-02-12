@@ -29,8 +29,12 @@ $titleColor: #BAA7FF;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 body {
     background: $bodyBg;
     padding: 30px 150px;
+}
+main {
+    position: relative;
 }
