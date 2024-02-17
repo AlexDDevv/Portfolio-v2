@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillsItem from "./SkillsItem"
 import QualiItem from './QualiItem'
-import dataSkills from "../data/dataSkills.json"
+import dataSkills from "../../data/dataSkills.json"
 
 export default function Skills() {
     return (
