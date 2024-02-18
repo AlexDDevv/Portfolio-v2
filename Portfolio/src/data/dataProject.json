@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Kasa",
         "presentation": "Agence de location d'appartements entre particuliers depuis près de 10 ans, un des leaders du marché en France.",
         "description": "Refonte du site web Kasa avec une stack JS plus récente utilisant React et Node.js.",
@@ -13,9 +14,10 @@
         ],
         "repo": "https://github.com/AlexDDevv/P8-Kasa",
         "website": "https://p8-kasa-sigma.vercel.app/",
-        "cover": "./assets/img/Kasa.webp"
+        "cover": "/Kasa.webp"
     },
     {
+        "id": 2,
         "title": "Sophie Bluel",
         "presentation": "Agence web ArchiWebos travaillant sur la conception du site portfolio d'une architecte d'intérieur.",
         "description": "Conception du site portfolio d'une architecte d'intérieur.",
@@ -29,9 +31,10 @@
             "Figma"
         ],
         "repo": "https://github.com/AlexDDevv/P6-Portefolio-Sophie-Bluel",
-        "cover": "./assets/img/Sophie-Bluel.webp"
+        "cover": "/Sophie-Bluel.webp"
     },
     {
+        "id": 3,
         "title": "OhMyFood",
         "presentation": "Jeune startup présente à New York, souhaite faire sa place à Paris et s'imposer sur le marché de la restauration.",
         "description": "Site répertoriant les menus de restaurants gastronomiques.",
@@ -44,6 +47,6 @@
         ],
         "repo": "https://github.com/AlexDDevv/P4-OhMyFood",
         "website": "https://p4-oh-my-food.vercel.app/",
-        "cover": "./assets/img/OhMyFood.webp"
+        "cover": "/OhMyFood.webp"
     }
 ]
