@@ -1,12 +1,12 @@
 import React from 'react'
 import SpanProject from './SpanProject'
 
-export default function Projects({ title, description, repo, site, techno }) {
+export default function Projects({ id, title, description, repo, site, techno, onClick }) {
     return (
-        <div className="project-container">
+        <div className="project-container" id={id}>
             <div className="title-container">
                 <h3 className="title-project">{title}</h3>
-                <i className="fa-solid fa-arrow-up-right-from-square" title='Voir plus'></i>
+                <i className="fa-solid fa-arrow-up-right-from-square" title='Voir plus' onClick={onClick}></i>
             </div>
             <div className="description-container">
                 <p className="description-project">{description}</p>
