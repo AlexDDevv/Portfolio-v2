@@ -1,4 +1,5 @@
 import React from 'react'
+import DarkMode from './DarkMode'
 
 export default function Header() {
     return (
@@ -21,6 +22,7 @@ export default function Header() {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+                <DarkMode />
             </nav>
         </header>
     )
