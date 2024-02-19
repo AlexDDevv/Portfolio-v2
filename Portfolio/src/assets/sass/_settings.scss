@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-$titleFont: 'Roboto', sans-serif;
-$bodyFont: 'Lato', sans-serif;
-$bodyBg: #1B1525;
-$bgBtn: #6E56CF;
-$textColor: #E2DDFE;
-$titleColor: #BAA7FF;
-
 @mixin center {
     display: flex;
     align-items: center;
@@ -17,10 +10,49 @@ $titleColor: #BAA7FF;
     align-items: center;
     justify-content: space-between;
 }
+
+$titleFont: 'Roboto', sans-serif;
+$bodyFont: 'Lato', sans-serif;
+
+:root {
+    --bodyBg: #F7F9FF;
+    --bgBtn: #3E63DD;
+    --bgBtnHover: #3358D4;
+    --bgComponent: #EDF2FE;
+    --bgComponentHover: #E1E9FF;
+    --textColor: #1F2D5C;
+    --titleColor: #3A5BC7;
+    --border: #C1D0FF;
+    --spanBgModal: #3E63DD;
+    --spanColorModal: white;
+    --spanHoverModal: #3358D4;
+}
+
+
+[data-theme="dark"] {
+    --bodyBg: #11131F;
+    --bgBtn: #3E63DD;
+    --bgBtnHover: #5472E4;
+    --bgComponent: #182449;
+    --bgComponentHover: #1D2E62;
+    --textColor: #D6E1FF;
+    --titleColor: #9EB1FF;
+    --border: #304384;
+    --spanBgModal: white;
+    --spanColorModal: #182449;
+    --spanHoverModal: #1D2E62;
+}
+
 @keyframes appear {
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+@keyframes disappear {
+    100% {
+        opacity: 0;
+        transform: translateX(1000px);
     }
 }
 
@@ -32,9 +64,23 @@ $titleColor: #BAA7FF;
     scroll-behavior: smooth;
 }
 body {
-    background: $bodyBg;
+    background: var(--bodyBg);
     padding: 30px 150px;
+    transition: 0.3s ease-in-out;
+}
+body.antiScroll {
+    overflow-y: hidden;
 }
 main {
     position: relative;
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: rgba(17, 19, 31, 0.8);
 }
