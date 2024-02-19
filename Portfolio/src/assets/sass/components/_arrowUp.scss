@@ -11,7 +11,7 @@
     }
 
     i {
-        color: $textColor;
+        color: var(--textColor);
         font-size: 2rem;
     }
 }
