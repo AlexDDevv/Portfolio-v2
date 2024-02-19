@@ -2,7 +2,7 @@
     text-align: center;
 
     .skills {
-        color: $titleColor;
+        color: var(--titleColor);
         font-family: $titleFont;
         font-size: 2.5rem;
         margin-bottom: 50px;
@@ -15,7 +15,7 @@
 
         .techno-container {
             width: 75%;
-            border-right: 1px solid #6958AD;
+            border-right: 1px solid var(--border);
             padding: 50px;
 
             .techno-list {
@@ -25,7 +25,7 @@
                 gap: 50px 80px;
     
                 .techno {
-                    color: $textColor;
+                    color: var(--textColor);
                     font-size: 4rem;
                     opacity: 0;
                     transform: translateY(50px);
@@ -57,9 +57,9 @@
                     }
                 }
                 .ps {
-                    background: $textColor;
+                    background: var(--textColor);
                     border-radius: 8px;
-                    color: $bodyBg;
+                    color: var(--bodyBg);
                     font-family: $bodyFont;
                     font-size: 2rem;
                     font-style: normal;
@@ -81,7 +81,7 @@
                 margin-bottom: 15px;
 
                 .add-li {
-                    color: $textColor;
+                    color: var(--textColor);
                     font-family: $bodyFont;
                     font-size: 1rem;
                     line-height: 25px; 
@@ -109,7 +109,7 @@
                     }
 
                     &:nth-child(3) {
-                        border-bottom: 1px solid #6958AD;
+                        border-bottom: 1px solid var(--border);
                         padding-bottom: 15px;
                     }
                     &:nth-child(4) {

@@ -6,12 +6,13 @@
     padding-left: 10px;
 
     .btn-link {
-        background: $bgBtn;
+        background: var(--bgBtn);
         border: none;
         border-radius: 5px;
         padding: 8px 10px;
         opacity: 0;
         transform: translateX(-50px);
+        transition: 0.2s;
         animation: appear 0.5s ease-out forwards;
 
         &:nth-child(1) {
@@ -28,6 +29,9 @@
         }
         &:nth-child(5) {
             animation-delay: 0.7s;
+        }
+        &:hover {
+            background: #5472E4;
         }
 
         a {

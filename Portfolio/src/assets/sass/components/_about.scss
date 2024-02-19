@@ -13,22 +13,22 @@
             margin-bottom: 30px;
 
             .hello {
-                color: $titleColor;
+                color: var(--titleColor);
                 font-family: $titleFont;
                 font-size: 1.5rem;
                 font-weight: 700;
                 opacity: 0;
-                transform: translateY(-30px);
+                transform: translateY(-50px);
                 animation: appear 0.5s 0.1s ease-out forwards;
             }
             .name-container {
                 .name {
-                    color: $titleColor;
+                    color: var(--titleColor);
                     font-family: $titleFont;
                     font-size: clamp(3rem,5vw + 1rem,6.2rem);
                     padding-left: 10px;
                     opacity: 0;
-                    transform: translateY(-30px);
+                    transform: translateY(-50px);
                     animation: appear 0.5s 0.3s ease-out forwards;
                 }
                 .fam {
@@ -36,7 +36,7 @@
                 }
             } 
             .description {
-                color: $textColor;
+                color: var(--textColor);
                 font-family: $bodyFont;
                 font-size: 1.2rem;
                 line-height: 30px;
