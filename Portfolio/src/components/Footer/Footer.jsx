@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from './Contact'
 import FooterLink from "./FooterLink"
 
 export default function Footer() {
@@ -25,20 +26,24 @@ export default function Footer() {
         },
     ]
 
-  return (
-    <footer className="footer">
-        <div className="footer-content">
-            <ul className="footer-list">
-                {footerInfo.map((item, i) => (
-                    <FooterLink
-                        key={i}
-                        link={item.link}
-                        icon={item.icon}
-                        title={item.title}
-                    />
-                ))}
-            </ul>
-        </div>
-    </footer>
-  )
+    return (
+        <footer className="footer">
+            <section id="contact">
+                <h2 className="contact">Me contacter</h2>
+                <div className="footer-content">
+                    <Contact />
+                    <ul className="footer-list">
+                        {footerInfo.map((item, i) => (
+                            <FooterLink
+                                key={i}
+                                link={item.link}
+                                icon={item.icon}
+                                title={item.title}
+                            />
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    )
 }
