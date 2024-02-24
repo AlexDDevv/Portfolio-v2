@@ -40,9 +40,17 @@
             font-family: $bodyFont;
             font-size: 0.9rem;
             font-weight: 700;
+
+            @media screen and (max-width: 600px) {
+                font-size: 0.8rem;
+            }
             
             i {
                 margin-right: 10px;
+
+                @media screen and (max-width: 600px) {
+                    margin-right: 8px;
+                }
             }
         }
     }
