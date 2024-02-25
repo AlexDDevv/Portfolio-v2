@@ -16,7 +16,7 @@ export default function About() {
                     <p className="description"><strong>Développeur web</strong> front-end en reconversion. Autodidacte, j'aime créer des projets esthétiques et utiles. Voulant un peu plus de structure et de challenge, j'ai suivi la formation d'intégrateur web d'OpenClassrooms. En quête d'expérience professionnelle, de découvrir le travail en équipe, de continuer à apprendre et à grandir dans ce domaine passionnant.</p>
                 </div>
                 <div className="my-links">
-                    {data.map((item, i) => (
+                    {data.aboutLink.map((item, i) => (
                         <BtnLink
                             key={i}
                             link={item.link}
