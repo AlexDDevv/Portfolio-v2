@@ -65,7 +65,7 @@ $bodyFont: 'Lato', sans-serif;
 }
 body {
     background: var(--bodyBg);
-    padding: 30px 150px;
+    padding: 30px 100px;
     transition: 0.3s ease-in-out;
 }
 body.antiScroll {
@@ -73,6 +73,11 @@ body.antiScroll {
 }
 main {
     position: relative;
+}
+.skills, .projects, .contact {
+    color: var(--titleColor);
+    font-family: $titleFont;
+    font-size: 2.5rem;
 }
 .overlay {
     width: 100vw;
@@ -83,4 +88,20 @@ main {
     right: 0;
     position: fixed;
     background: rgba(17, 19, 31, 0.8);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 30px 50px;
+    }    
+}
+@media screen and (max-width: 820px) {
+    body {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .skills, .projects, .contact {
+        font-size: 2rem;
+    }
 }
