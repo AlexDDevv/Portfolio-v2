@@ -1,26 +1,35 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function ArrowUp() {
-    const arrowRef = useRef()
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            if (entries[0].isIntersecting) {
-                arrowRef.current.classList.add("active-arrow")
-            }
-        })
-        observer.observe(arrowRef.current)
+        const handleScroll = () => {
+            let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
 
-        return () => observer.disconnect()
-    }, [])
+            const scrollTrigger = 1;
+
+            if (scrollValue > scrollTrigger) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const scrollTop = () => {
-        window.scrollTo(0, 0)
-    }
+        window.scrollTo(0, 0);
+    };
 
-  return (
-    <div className="arrow" ref={arrowRef} onClick={scrollTop}>
-        <i className="fa-solid fa-circle-chevron-up"></i>
-    </div>
-  )
+    return (
+        <div className={`arrow ${isVisible ? 'active-arrow' : ''}`} onClick={scrollTop}>
+            <i className="fa-solid fa-circle-chevron-up"></i>
+        </div>
+    );
 }
