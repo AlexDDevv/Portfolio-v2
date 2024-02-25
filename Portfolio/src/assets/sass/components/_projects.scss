@@ -6,21 +6,25 @@
     padding: 0 50px;
     position: relative;
 
-    .projects {
-        color: var(--titleColor);
-        font-family: $titleFont;
-        font-size: 2.5rem;
+    @media screen and (max-width: 1290px) {
+        padding: 0;
     }
+
     .container {
         @include center;
         gap: 30px;
 
+        @media screen and (max-width: 1290px) {
+            flex-wrap: wrap;
+        }
+
         .project-container {
             background: var(--bgComponent);
             border-radius: 5px;
-            flex: 1 1 0%;
+            flex: auto;
             padding: 20px;
             box-shadow: inset 0 0 0 1px var(--border);
+            max-width: 335px;
     
             .title-container {
                 @include between;
