@@ -2,7 +2,7 @@
     background: var(--bgComponent);
     font-family: $bodyFont;
     padding: 50px 30px;
-    width: 40%;
+    max-width: 550px;
     min-width: 320px;
     height: 100vh;
     position: fixed;
@@ -12,6 +12,10 @@
     transform: translateX(1000px);
     z-index: 1000;
     box-shadow: inset 5px 0 0 0 var(--border);
+
+    @media screen and (max-width: 500px) {
+        overflow: scroll;
+    }
 
     &.opened {
         animation: appear 0.5s ease-out forwards;
@@ -26,7 +30,7 @@
         gap: 50px;
 
         .content-img {
-            width: 60%;
+            width: 80%;
 
             img {
                 width: 100%;
@@ -60,6 +64,11 @@
                     font-size: 0.9rem;
                     font-weight: 700;
                     padding: 5px 10px;
+
+                    @media screen and (max-width: 550px) {
+                        font-size: 0.8rem;
+                        border-radius: 4px;
+                    }
                 }
             }
             span {
@@ -71,6 +80,11 @@
                 color: var(--textColor);
                 font-size: 1.1rem;
                 line-height: 24px;
+
+                @media screen and (max-width: 550px) {
+                    font-size: 1rem;
+                    line-height: 23px;
+                }
             }
         }
         .links-project {
