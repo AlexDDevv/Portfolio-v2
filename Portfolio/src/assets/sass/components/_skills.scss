@@ -2,33 +2,58 @@
     text-align: center;
 
     .skills {
-        color: var(--titleColor);
-        font-family: $titleFont;
-        font-size: 2.5rem;
         margin-bottom: 50px;
     }
     .skills-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0 100px;
+        @include center;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
 
         .techno-container {
-            width: 75%;
             border-right: 1px solid var(--border);
-            padding: 50px;
+            padding: 50px 50px 50px 0;
+
+            @media screen and (max-width: 800px) {
+                border: none;
+                margin-bottom: 50px;
+                padding: 0 20px;
+                width: 100%;
+            }
+            @media screen and (max-width: 600px) {
+                padding: 0;
+                margin-bottom: 35px;
+            }
 
             .techno-list {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
                 justify-items: center;
-                gap: 50px 80px;
+                gap: 50px;
+
+                @media screen and (max-width: 800px) {
+                    border-bottom: 1px solid var(--border);
+                    @include center;
+                    flex-wrap: wrap;
+                    padding-bottom: 50px;
+                }
+                @media screen and (max-width: 600px) {
+                    gap: 30px 40px;
+                    padding-bottom: 35px;
+                }
     
                 .techno {
                     color: var(--textColor);
                     font-size: 4rem;
                     opacity: 0;
                     transform: translateY(50px);
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 3rem;
+                    }
     
                     &.active {
                         animation: appear 0.7s ease-out forwards;
@@ -67,19 +92,27 @@
                     letter-spacing: 1px;
                     padding: 10px;
                     @include center;
-                    width: 58px;
-                    height: 58px;
+                    width: 56px;
+                    height: 56px;
+
+                    @media screen and (max-width: 600px) {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 5px;
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
         .more-container {
-            width: 25%;
             padding-left: 50px;
             text-align: left;
 
-            .additionnal-skills {
-                margin-bottom: 15px;
+            @media screen and (max-width: 800px) {
+                padding: 0;
+            }
 
+            .additionnal-skills {
                 .add-li {
                     color: var(--textColor);
                     font-family: $bodyFont;
@@ -107,7 +140,7 @@
                             animation-delay: 0.5s;
                         }
                     }
-
+                    
                     &:nth-child(3) {
                         border-bottom: 1px solid var(--border);
                         padding-bottom: 15px;
