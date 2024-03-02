@@ -16,7 +16,7 @@
             "content": "Twitter"
         },
         {
-            "link": "",
+            "link": "/DELPORTE-Alexis-CV.pdf",
             "icon": "fa-solid fa-file",
             "content": "Mon CV"
         },
@@ -25,6 +25,28 @@
             "icon": "fa-solid fa-envelope",
             "content": "alexddevs@gmail.com"
         } 
+    ],
+    "footerLink": [
+        {
+            "link": "https://github.com/AlexDDevv",
+            "icon": "fa-brands fa-github",
+            "title": "Github"
+        },
+        {
+            "link": "https://www.instagram.com/sport.devweb/",
+            "icon": "fa-brands fa-instagram",
+            "title": "Instagram"
+        },
+        {
+            "link": "mailto:alexddevs@gmail.com",
+            "icon": "fa-solid fa-envelope",
+            "title": "Gmail"
+        },
+        {
+            "link": "/DELPORTE-Alexis-CV.pdf",
+            "icon": "fa-solid fa-file-pdf",
+            "title": "Voir le CV PDF"
+        }
     ],
     "contactLink": [
         {
