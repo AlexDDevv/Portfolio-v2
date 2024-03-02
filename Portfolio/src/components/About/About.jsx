@@ -1,7 +1,7 @@
 import React from 'react'
 import BtnLink from "./BtnLink"
 import data from "../../data/data.json"
-import moi from "../../assets/img/moi.webp"
+import moi from "../../assets/img/portrait.webp"
 
 export default function About() {
     return (
