@@ -8,7 +8,7 @@ export default function ContactLink({ container, href, titleAtt, icon, category,
                     <i className={icon}></i>
                 </div>
                 <div className={category}>
-                    <h4>{title}</h4>
+                    <h3>{title}</h3>
                     <p>{content}</p>
                 </div>
             </a>
