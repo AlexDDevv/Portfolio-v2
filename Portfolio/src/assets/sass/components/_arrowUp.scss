@@ -6,6 +6,12 @@
     opacity: 0;
     transform: translateY(50px);
     transition: 0.2s;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        opacity: 1;
+        transform: none;
+    }
     
     &.active-arrow {
         opacity: 1;
