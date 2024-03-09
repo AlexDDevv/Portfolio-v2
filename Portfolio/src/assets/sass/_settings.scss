@@ -67,12 +67,10 @@ body {
     background: var(--bodyBg);
     padding: 30px 100px;
     transition: 0.3s ease-in-out;
+    position: relative;
 }
 body.antiScroll {
     overflow-y: hidden;
-}
-main {
-    position: relative;
 }
 .skills, .projects, .contact {
     color: var(--titleColor);
