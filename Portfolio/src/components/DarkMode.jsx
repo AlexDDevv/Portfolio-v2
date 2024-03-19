@@ -38,6 +38,7 @@ export default function DarkMode() {
         <label htmlFor="darkModeToggle" className='dark-mode-label'>
             <i className="fa-solid fa-sun sun"></i>
             <i className="fa-solid fa-moon moon"></i>
+            <span className="sr-only">Changer la couleur du thème du site</span>
         </label>
     </div>
   )

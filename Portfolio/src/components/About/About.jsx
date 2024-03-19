@@ -8,10 +8,10 @@ export default function About() {
         <section id="about">
             <div className="about">
                 <div className="presentation">
-                    <p className="hello">Bonjour !</p>
+                    <h1 className="hello">Bonjour !</h1>
                     <div className="name-container">
-                        <h1 className='name'>Alexis</h1>
-                        <h2 className='name fam'>Delporte,</h2>
+                        <h2 className='name'>Alexis</h2>
+                        <h3 className='name fam'>Delporte,</h3>
                     </div>
                     <p className="description"><strong>Développeur web</strong> front-end en reconversion. Autodidacte, j'aime créer des projets esthétiques et utiles. Voulant un peu plus de structure et de challenge, j'ai suivi la formation d'intégrateur web d'OpenClassrooms. En quête d'expérience professionnelle, de découvrir le travail en équipe, de continuer à apprendre et à grandir dans ce domaine passionnant.</p>
                 </div>
@@ -22,6 +22,7 @@ export default function About() {
                             link={item.link}
                             icon={item.icon}
                             content={item.content}
+                            forPDF={item.forPDF}
                         />
                     ))}
                 </div>
