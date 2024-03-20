@@ -22,7 +22,6 @@ export default function About() {
                             link={item.link}
                             icon={item.icon}
                             content={item.content}
-                            forPDF={item.forPDF}
                         />
                     ))}
                 </div>

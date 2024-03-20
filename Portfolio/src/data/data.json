@@ -6,6 +6,11 @@
             "content": "Github"
         },
         {
+            "link": "https://www.linkedin.com/in/alexis-delporte-8371362b8/",
+            "icon": "fa-brands fa-linkedin",
+            "content": "Linkedin"
+        },
+        {
             "link": "https://www.instagram.com/sport.devweb/",
             "icon": "fa-brands fa-instagram",
             "content": "Instagram"
@@ -16,10 +21,9 @@
             "content": "Twitter"
         },
         {
-            "link": "/DELPORTE-Alexis-CV.pdf",
+            "link": "https://delporte-alexis-cv.vercel.app/",
             "icon": "fa-solid fa-file",
-            "content": "Mon CV (PDF)",
-            "forPDF": "Télécharger mon CV au format PDF en cliquant sur ce lien."
+            "content": "Mon CV"
         },
         {
             "link": "mailto:alexddevs@gmail.com",
@@ -34,6 +38,11 @@
             "title": "Github"
         },
         {
+            "link": "https://www.linkedin.com/in/alexis-delporte-8371362b8/",
+            "icon": "fa-brands fa-linkedin",
+            "title": "Linkedin"
+        },
+        {
             "link": "https://www.instagram.com/sport.devweb/",
             "icon": "fa-brands fa-instagram",
             "title": "Instagram"
@@ -44,10 +53,9 @@
             "title": "Gmail"
         },
         {
-            "link": "/DELPORTE-Alexis-CV.pdf",
-            "icon": "fa-solid fa-file-pdf",
-            "title": "Voir le CV PDF",
-            "forPDF": "Télécharger mon CV au format PDF en cliquant sur ce lien."
+            "link": "https://delporte-alexis-cv.vercel.app/",
+            "icon": "fa-solid fa-file",
+            "title": "Voir le CV"
         }
     ],
     "contactLink": [
