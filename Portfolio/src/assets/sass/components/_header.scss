@@ -5,7 +5,7 @@
     transform: translateY(-30px);
     animation: appear 0.5s 1s ease-out forwards;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 768px) {
         margin-bottom: 50px;
     }
     @media screen and (max-width: 530px) {
@@ -20,13 +20,9 @@
         padding: 10px;
         @include center;
 
-        @media screen and (max-width: 800px) {
-            height: 50px;
-            width: 50px;
-        }
-        @media screen and (max-width: 680px) {
-            height: 40px;
-            width: 40px;
+        @media screen and (max-width: 768px) {
+            height: 45px;
+            width: 45px;
         }
         @media screen and (max-width: 530px) {
             display: none;
@@ -38,10 +34,7 @@
             font-size: 1.5rem;
             font-weight: 700;
 
-            @media screen and (max-width: 800px) {
-                font-size: 1.2rem;
-            }
-            @media screen and (max-width: 680px) {
+            @media screen and (max-width: 768px) {
                 font-size: 1rem;
             }
         }
@@ -51,10 +44,7 @@
         align-items: center;
         gap: 50px;
 
-        @media screen and (max-width: 800px) {
-            gap: 30px;
-        }
-        @media screen and (max-width: 680px) {
+        @media screen and (max-width: 768px) {
             gap: 20px;
         }
         @media screen and (max-width: 530px) {
@@ -64,11 +54,10 @@
 
         .nav-list {
             display: flex;
-            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 30px;
 
-            @media screen and (max-width: 680px) {
-                gap: 20px;
-            }
             @media screen and (max-width: 530px) {
                 order: 2;
             }
@@ -99,14 +88,8 @@
                     font-family: $bodyFont;
                     font-size: 1.5rem;
 
-                    @media screen and (max-width: 800px) {
-                        font-size: 1.2rem;
-                    }
-                    @media screen and (max-width: 680px) {
+                    @media screen and (max-width: 768px) {
                         font-size: 1rem;
-                    }
-                    @media screen and (max-width: 530px) {
-                        font-size: 0.9rem;
                     }
                 }
             }
