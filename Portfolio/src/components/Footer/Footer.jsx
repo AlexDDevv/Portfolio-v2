@@ -17,7 +17,6 @@ export default function Footer() {
                                 link={item.link}
                                 icon={item.icon}
                                 title={item.title}
-                                forPDF={item.forPDF}
                             />
                         ))}
                     </ul>

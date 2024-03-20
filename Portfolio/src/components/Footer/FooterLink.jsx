@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 
-export default function FooterLink({ link, icon, title, forPDF }) {
+export default function FooterLink({ link, icon, title }) {
     const footerRef = useRef()
 
     useEffect(() => {
@@ -18,7 +18,6 @@ export default function FooterLink({ link, icon, title, forPDF }) {
         <li className="footer-li" ref={footerRef}>
             <a href={link} className="footer-link" title={title} target='_blank'>
                 <i className={icon}></i>
-                <p className="sr-only">{forPDF}</p>
             </a>
         </li>
     )
