@@ -79,10 +79,11 @@
             }
             .footer-list {
                 @include center;
+                flex-wrap: wrap;
                 gap: 50px;
 
                 @media screen and (max-width: 750px) {
-                    gap: 40px;
+                    gap: 20px 40px;
                 }
     
                 .footer-li {
@@ -90,7 +91,7 @@
                     transform: translateY(-50px);
     
                     &.active-link {
-                        animation: appear 0.3s ease-out forwards;
+                        animation: appear 0.4s ease-out forwards;
     
                         &:nth-child(2) {
                             animation-delay: 0.1s;
@@ -100,6 +101,9 @@
                         }
                         &:nth-child(4) {
                             animation-delay: 0.3s;
+                        }
+                        &:nth-child(5) {
+                            animation-delay: 0.4s;
                         }
                     }
     

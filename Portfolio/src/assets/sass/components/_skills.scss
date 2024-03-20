@@ -7,7 +7,7 @@
     .skills-container {
         @include center;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
         }
 
@@ -15,13 +15,13 @@
             border-right: 1px solid var(--border);
             padding: 50px 50px 50px 0;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 768px) {
                 border: none;
                 margin-bottom: 50px;
                 padding: 0 20px;
                 width: 100%;
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 425px) {
                 padding: 0;
                 margin-bottom: 35px;
             }
@@ -34,14 +34,14 @@
                 justify-items: center;
                 gap: 50px;
 
-                @media screen and (max-width: 800px) {
+                @media screen and (max-width: 768px) {
                     border-bottom: 1px solid var(--border);
                     @include center;
                     flex-wrap: wrap;
+                    gap: 30px 40px;
                     padding-bottom: 50px;
                 }
-                @media screen and (max-width: 600px) {
-                    gap: 30px 40px;
+                @media screen and (max-width: 425px) {
                     padding-bottom: 35px;
                 }
     
@@ -51,7 +51,7 @@
                     opacity: 0;
                     transform: translateY(50px);
 
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 768px) {
                         font-size: 3rem;
                     }
     
@@ -95,7 +95,7 @@
                     width: 56px;
                     height: 56px;
 
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 768px) {
                         height: 45px;
                         width: 45px;
                         border-radius: 5px;
@@ -108,7 +108,7 @@
             padding-left: 50px;
             text-align: left;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 768px) {
                 padding: 0;
             }
 
