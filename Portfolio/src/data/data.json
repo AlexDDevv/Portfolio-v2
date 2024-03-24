@@ -48,11 +48,6 @@
             "title": "Instagram"
         },
         {
-            "link": "mailto:alexddevs@gmail.com",
-            "icon": "fa-solid fa-envelope",
-            "title": "Gmail"
-        },
-        {
             "link": "https://delporte-alexis-cv.vercel.app/",
             "icon": "fa-solid fa-file",
             "title": "Voir le CV"

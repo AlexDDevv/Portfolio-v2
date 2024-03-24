@@ -73,6 +73,7 @@ body.antiScroll {
   right: 0;
   position: fixed;
   background: rgba(17, 19, 31, 0.8);
+  z-index: 500;
 }
 
 @media screen and (max-width: 1024px) {
@@ -104,7 +105,7 @@ body.antiScroll {
     margin-bottom: 50px;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 575px) {
   .header {
     justify-content: center;
   }
@@ -125,7 +126,7 @@ body.antiScroll {
     width: 45px;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 575px) {
   .header .header-logo {
     display: none;
   }
@@ -151,7 +152,7 @@ body.antiScroll {
     gap: 20px;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 575px) {
   .header .navbar {
     justify-content: center;
     flex-wrap: wrap;
@@ -163,7 +164,7 @@ body.antiScroll {
   flex-wrap: wrap;
   gap: 10px 30px;
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 575px) {
   .header .navbar .nav-list {
     order: 2;
   }
@@ -377,8 +378,7 @@ body.antiScroll {
 .my-links .btn-link {
   background: var(--bgBtn);
   border: none;
-  border-radius: 5px;
-  padding: 8px 10px;
+  border-radius: 3px;
   opacity: 0;
   transform: translateX(-50px);
   transition: 0.2s;
@@ -411,6 +411,8 @@ body.antiScroll {
   font-family: "Lato", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
+  padding: 8px 10px;
+  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .my-links .btn-link a {
@@ -666,7 +668,7 @@ body.antiScroll {
 .modal {
   background: var(--bgComponent);
   font-family: "Lato", sans-serif;
-  padding: 50px 30px;
+  padding: 50px 30px 15px 30px;
   max-width: 550px;
   min-width: 320px;
   height: 100vh;
@@ -678,10 +680,11 @@ body.antiScroll {
   z-index: 1000;
   box-shadow: inset 5px 0 0 0 var(--border);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .modal {
     overflow: scroll;
     overflow-x: hidden;
+    padding: 50px 30px;
   }
 }
 .modal.opened {
@@ -711,7 +714,7 @@ body.antiScroll {
   flex-direction: column;
   gap: 30px;
 }
-.modal .modal-container .content-text .client h5 {
+.modal .modal-container .content-text .client h4 {
   color: var(--titleColor);
   font-size: 1.2rem;
   font-weight: 700;
@@ -725,16 +728,15 @@ body.antiScroll {
 }
 .modal .modal-container .content-text .techno-use .span-project {
   background: var(--spanBgModal);
-  border-radius: 5px;
+  border-radius: 3px;
   color: var(--spanColorModal);
   font-size: 0.9rem;
   font-weight: 700;
   padding: 5px 10px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 425px) {
   .modal .modal-container .content-text .techno-use .span-project {
     font-size: 0.8rem;
-    border-radius: 4px;
   }
 }
 .modal .modal-container .content-text span {
@@ -747,7 +749,7 @@ body.antiScroll {
   font-size: 1.1rem;
   line-height: 24px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 425px) {
   .modal .modal-container .content-text p {
     font-size: 1rem;
     line-height: 23px;
@@ -762,7 +764,7 @@ body.antiScroll {
 }
 .modal .modal-container .links-project a {
   background: var(--spanBgModal);
-  border-radius: 5px;
+  border-radius: 3px;
   color: var(--spanColorModal);
   font-weight: 700;
   padding: 5px 15px;
@@ -798,7 +800,7 @@ body.antiScroll {
 .footer {
   margin-top: 100px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .footer {
     margin-bottom: 50px;
   }
@@ -820,20 +822,21 @@ body.antiScroll {
   border: 1px solid var(--border);
   padding: 40px 50px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .footer #contact .footer-content {
-    padding: 30px;
+    padding: 25px;
   }
 }
 .footer #contact .footer-content .contact-details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px 50px;
   width: 100%;
   text-align: left;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .footer #contact .footer-content .contact-details {
     flex-direction: column;
     align-items: flex-start;
@@ -848,8 +851,8 @@ body.antiScroll {
 }
 .footer #contact .footer-content .contact-details a .icon {
   background: var(--textColor);
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -857,7 +860,7 @@ body.antiScroll {
 }
 .footer #contact .footer-content .contact-details a .icon i {
   color: var(--bgComponent);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 .footer #contact .footer-content .contact-details a h3 {
   color: var(--titleColor);
@@ -865,7 +868,7 @@ body.antiScroll {
   font-size: 1.2rem;
   margin-bottom: 2px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .footer #contact .footer-content .contact-details a h3 {
     font-size: 1rem;
   }
@@ -874,7 +877,7 @@ body.antiScroll {
   color: var(--textColor);
   font-family: "Lato", sans-serif;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .footer #contact .footer-content .contact-details a p {
     font-size: 0.9rem;
   }
@@ -886,9 +889,9 @@ body.antiScroll {
   flex-wrap: wrap;
   gap: 50px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .footer #contact .footer-content .footer-list {
-    gap: 20px 40px;
+    gap: 20px 30px;
   }
 }
 .footer #contact .footer-content .footer-list .footer-li {
@@ -917,9 +920,14 @@ body.antiScroll {
   font-size: 2rem;
   transition: 0.2s;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .footer #contact .footer-content .footer-list .footer-li .footer-link i {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer #contact .footer-content .footer-list .footer-li .footer-link i {
+    font-size: 1.65rem;
   }
 }
 .footer #contact .footer-content .footer-list .footer-li .footer-link i:hover {

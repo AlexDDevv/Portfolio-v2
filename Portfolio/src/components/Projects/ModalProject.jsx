@@ -23,7 +23,7 @@ export default function ModalProject({ data, isOpen, setIsOpen }) {
                             </div>
                             <div className="content-text">
                                 <div className="client">
-                                    <h5><span>Client:</span> {data.title}</h5>
+                                    <h4><span>Client:</span> {data.title}</h4>
                                     <p>{data.presentation}</p>
                                 </div>
                                 <div className="objectif">

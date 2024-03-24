@@ -86,6 +86,7 @@ body.antiScroll {
     right: 0;
     position: fixed;
     background: rgba(17, 19, 31, 0.8);
+    z-index: 500;
 }
 
 @media screen and (max-width: 1024px) {
