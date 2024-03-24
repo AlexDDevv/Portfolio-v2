@@ -1,7 +1,7 @@
 .modal {
     background: var(--bgComponent);
     font-family: $bodyFont;
-    padding: 50px 30px;
+    padding: 50px 30px 15px 30px;
     max-width: 550px;
     min-width: 320px;
     height: 100vh;
@@ -13,9 +13,10 @@
     z-index: 1000;
     box-shadow: inset 5px 0 0 0 var(--border);
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         overflow: scroll;
         overflow-x: hidden;
+        padding: 50px 30px;
     }
 
     &.opened {
@@ -45,7 +46,7 @@
             gap: 30px;
 
             .client {
-                h5 {
+                h4 {
                     color: var(--titleColor);
                     font-size: 1.2rem;
                     font-weight: 700;
@@ -60,15 +61,14 @@
 
                 .span-project {
                     background: var(--spanBgModal);
-                    border-radius: 5px;
+                    border-radius: 3px;
                     color: var(--spanColorModal);
                     font-size: 0.9rem;
                     font-weight: 700;
                     padding: 5px 10px;
 
-                    @media screen and (max-width: 550px) {
+                    @media screen and (max-width: 425px) {
                         font-size: 0.8rem;
-                        border-radius: 4px;
                     }
                 }
             }
@@ -82,7 +82,7 @@
                 font-size: 1.1rem;
                 line-height: 24px;
 
-                @media screen and (max-width: 550px) {
+                @media screen and (max-width: 425px) {
                     font-size: 1rem;
                     line-height: 23px;
                 }
@@ -97,7 +97,7 @@
 
             a {
                 background: var(--spanBgModal);
-                border-radius: 5px;
+                border-radius: 3px;
                 color: var(--spanColorModal);
                 font-weight: 700;
                 padding: 5px 15px;

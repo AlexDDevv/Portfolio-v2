@@ -8,7 +8,7 @@
     @media screen and (max-width: 768px) {
         margin-bottom: 50px;
     }
-    @media screen and (max-width: 530px) {
+    @media screen and (max-width: 575px) {
         justify-content: center;
     }
 
@@ -24,7 +24,7 @@
             height: 45px;
             width: 45px;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 575px) {
             display: none;
         }
 
@@ -47,7 +47,7 @@
         @media screen and (max-width: 768px) {
             gap: 20px;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 575px) {
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -58,7 +58,7 @@
             flex-wrap: wrap;
             gap: 10px 30px;
 
-            @media screen and (max-width: 530px) {
+            @media screen and (max-width: 575px) {
                 order: 2;
             }
 
