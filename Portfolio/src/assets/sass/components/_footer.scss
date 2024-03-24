@@ -1,7 +1,7 @@
 .footer {
     margin-top: 100px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
         margin-bottom: 50px;
     }
 
@@ -20,19 +20,20 @@
             border: 1px solid var(--border);
             padding: 40px 50px;
 
-            @media screen and (max-width: 900px) {
-                padding: 30px;
+            @media screen and (max-width: 1024px) {
+                padding: 25px;
             }
     
             .contact-details {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                gap: 20px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 30px 50px;
                 width: 100%;
                 text-align: left;
 
-                @media screen and (max-width: 750px) {
+                @media screen and (max-width: 768px) {
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: normal;
@@ -46,14 +47,14 @@
 
                     .icon {
                         background: var(--textColor);
-                        width: 50px;
-                        height: 50px;
+                        width: 45px;
+                        height: 45px;
                         border-radius: 2px;
                         @include center;
 
                         i {
                             color: var(--bgComponent);
-                            font-size: 1.5rem;
+                            font-size: 1.35rem;
                         }
                     }
 
@@ -63,7 +64,7 @@
                         font-size: 1.2rem;
                         margin-bottom: 2px;
 
-                        @media screen and (max-width: 900px) {
+                        @media screen and (max-width: 1024px) {
                             font-size: 1rem;
                         }
                     }
@@ -71,7 +72,7 @@
                         color: var(--textColor);
                         font-family: $bodyFont;
 
-                        @media screen and (max-width: 900px) {
+                        @media screen and (max-width: 1024px) {
                             font-size: 0.9rem;
                         }
                     }
@@ -82,8 +83,8 @@
                 flex-wrap: wrap;
                 gap: 50px;
 
-                @media screen and (max-width: 750px) {
-                    gap: 20px 40px;
+                @media screen and (max-width: 768px) {
+                    gap: 20px 30px;
                 }
     
                 .footer-li {
@@ -114,8 +115,11 @@
                             font-size: 2rem;
                             transition: 0.2s;
 
-                            @media screen and (max-width: 750px) {
+                            @media screen and (max-width: 768px) {
                                 font-size: 1.8rem;
+                            }
+                            @media screen and (max-width: 425px) {
+                                font-size: 1.65rem;
                             }
     
                             &:hover {
