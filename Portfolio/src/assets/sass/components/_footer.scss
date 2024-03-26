@@ -113,7 +113,7 @@
                         
                         i {
                             font-size: 2rem;
-                            transition: 0.2s;
+                            transition: transform 0.2s ease-out;
 
                             @media screen and (max-width: 768px) {
                                 font-size: 1.8rem;
