@@ -11,7 +11,7 @@
         border-radius: 3px;
         opacity: 0;
         transform: translateX(-50px);
-        transition: 0.2s;
+        transition: background 0.2s ease-out;
         animation: appear 0.5s ease-out forwards;
 
         &:nth-child(1) {
@@ -33,7 +33,7 @@
             animation-delay: 0.7s;
         }
         &:hover {
-            background: #5472E4;
+            background: #435DB1;
         }
 
         a {
