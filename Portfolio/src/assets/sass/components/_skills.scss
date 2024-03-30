@@ -72,6 +72,7 @@
                         }
                         &:nth-child(6) {
                             animation-delay: 0.5s;
+                            @include center;
                         }
                         &:nth-child(7) {
                             animation-delay: 0.6s;
@@ -80,6 +81,13 @@
                             animation-delay: 0.7s;
                         }
                     }
+                }
+                .redux {
+                    color: var(--textColor);
+                    font-family: $bodyFont;
+                    font-style: normal;
+                    font-size: 1.5rem;
+                    font-weight: 700;
                 }
                 .ps {
                     background: var(--textColor);
