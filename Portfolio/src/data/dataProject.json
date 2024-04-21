@@ -1,6 +1,23 @@
 [
     {
         "id": 1,
+        "title": "My little Library",
+        "presentation": "Bibliothèque numérique permettant de chercher des livres, d'enregistrer ceux que l'on a déjà lu ou que l'on souhaite lire.",
+        "description": "Petite bibliothèque numérique pour enregistrer des livres à lire ou déjà lus.",
+        "objectif": "Aimant beaucoup lire, j'ai souhaité créer un projet autour de la lecture, qui pourrait me servir à garder une trace de tous les livres que j'ai lu ou d'avoir une liste de ceux que j'aimerais lire. J'ai mis à contribution les compétences que j'ai acquises durant ma formation, notamment React. J'ai utilisé l'API Google Books pour récupérer les données. Ce projet m'a aussi permis de travailler ma créativité, ayant fait le design moi-même. Plusieurs fonctionnalités seront rajoutées dans le futur.",
+        "techno": [
+            "React",
+            "Sass",
+            "Google API",
+            "Responsive Web Design",
+            "Design"
+        ],
+        "repo": "https://github.com/AlexDDevv/My-library",
+        "website": "https://my-little-library.vercel.app/",
+        "cover": "/MyLittleLibrary.webp"
+    },
+    {
+        "id": 2,
         "title": "Kasa",
         "presentation": "Agence de location d'appartements entre particuliers depuis près de 10 ans, un des leaders du marché en France.",
         "description": "Refonte du site web Kasa avec une stack JS plus récente utilisant React et Node.js.",
@@ -17,7 +34,7 @@
         "cover": "/Kasa.webp"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Sophie Bluel",
         "presentation": "Agence web ArchiWebos travaillant sur la conception du site portfolio d'une architecte d'intérieur.",
         "description": "Conception du site portfolio d'une architecte d'intérieur.",
@@ -32,21 +49,5 @@
         ],
         "repo": "https://github.com/AlexDDevv/P6-Portefolio-Sophie-Bluel",
         "cover": "/Sophie-Bluel.webp"
-    },
-    {
-        "id": 3,
-        "title": "OhMyFood",
-        "presentation": "Jeune startup présente à New York, souhaite faire sa place à Paris et s'imposer sur le marché de la restauration.",
-        "description": "Site répertoriant les menus de restaurants gastronomiques.",
-        "objectif": "J'ai intégré cette startup en tant que développeur junior, et je devais créer le site à l'aide des maquettes fournies par l'équipe UX designer. J'ai conçu le projet en 'mobile first', c'est à dire prioriser et optimiser l'expérience utilisateur sur les appareils mobiles, en garantissant une expérience fluide et réactive sur tout type d'appareil. Pour améliorer l'intéractivité du site, j'ai intégré plusieurs animations fluides et naturelles, rendant une immersion et une utilisation agréable du site.",
-        "techno": [
-            "HTML 5",
-            "Sass",
-            "Animations css",
-            "Responsive Web Design"
-        ],
-        "repo": "https://github.com/AlexDDevv/P4-OhMyFood",
-        "website": "https://p4-oh-my-food.vercel.app/",
-        "cover": "/OhMyFood.webp"
     }
 ]
