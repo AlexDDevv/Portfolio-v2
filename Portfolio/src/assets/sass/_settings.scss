@@ -95,10 +95,13 @@ body.antiScroll {
 }
 @media screen and (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 20px 30px;
     }
 }
 @media screen and (max-width: 425px) {
+    body {
+        padding: 20px;
+    }
     .skills, .projects, .contact {
         font-size: 2rem;
     }
