@@ -13,7 +13,7 @@ export default function About() {
                         <h2 className='name'>Alexis</h2>
                         <h3 className='name fam'>Delporte,</h3>
                     </div>
-                    <p className="description"><strong>Développeur web</strong> front-end en reconversion. Autodidacte, j'aime créer des projets esthétiques et utiles. Voulant un peu plus de structure et de challenge, j'ai suivi la formation d'intégrateur web d'OpenClassrooms. En quête d'expérience professionnelle, de découvrir le travail en équipe, de continuer à apprendre et à grandir dans ce domaine passionnant.</p>
+                    <p className="description"><strong>Développeur web</strong> en recherche d'entreprises. Autodidacte en parallèle de mon travail pendant un an, puis une formation d'intégrateur web de 9 mois avec OpenClassrooms, je souhaite maintenant faire une formation en alternance afin d'acquérir une expérience professionnelle, de découvrir le travail en équipe et de continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime.</p>
                 </div>
                 <div className="my-links">
                     {data.aboutLink.map((item, i) => (
