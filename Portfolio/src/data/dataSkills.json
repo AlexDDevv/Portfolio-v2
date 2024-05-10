@@ -16,8 +16,14 @@
             "techno": "fa-brands fa-react"
         },
         {
-            "techno": "redux",
-            "content": "Redux"
+            "techno": "ts",
+            "content": "TS"
+        },
+        {
+            "techno": "fa-brands fa-node-js"
+        },
+        {
+            "techno": "fa-brands fa-envira"
         },
         {
             "techno": "fa-brands fa-github"
