@@ -1,6 +1,23 @@
 [
     {
         "id": 1,
+        "title": "Space Tourism",
+        "presentation": "Réalisation d'un challenge de la plateforme Frontend Mentor",
+        "description": "Réalisation d'un challenge de la plateforme Frontend Mentor",
+        "objectif": "Projet me permettant de continuer à perfectionner mes compétences sur React, de découvrir et de prendre en main Framer-motion. Une bonne architecture de dossiers est de mise, plusieurs fonctionnalités à mettre en place comme la navigation animée entre les différentes pages avec react-router et framer-motion, ainsi que plusieurs carrousel pour présenter les parties du site.",
+        "techno": [
+            "React",
+            "Framer-motion",
+            "Sass",
+            "Responsive Web Design",
+            "Figma"
+        ],
+        "repo": "https://github.com/AlexDDevv/space-tourism",
+        "website": "https://space-tourism-star.vercel.app/",
+        "cover": "/SpaceTourism.webp"
+    },
+    {
+        "id": 2,
         "title": "My little Library",
         "presentation": "Bibliothèque numérique permettant de chercher des livres, d'enregistrer ceux que l'on a déjà lu ou que l'on souhaite lire.",
         "description": "Petite bibliothèque numérique pour enregistrer des livres à lire ou déjà lus.",
@@ -17,28 +34,11 @@
         "cover": "/MyLittleLibrary.webp"
     },
     {
-        "id": 2,
-        "title": "Kasa",
-        "presentation": "Agence de location d'appartements entre particuliers depuis près de 10 ans, un des leaders du marché en France.",
-        "description": "Refonte du site web Kasa avec une stack JS plus récente utilisant React et Node.js.",
-        "objectif": "J'ai été recruté par l'entreprise Kasa en tant que développeur front-end freelance pour développer leur nouvelle plateforme web. En effet, le site ayant été codé il y a 10 ans, la CTO souhaitait le mettre à jour avec une stack complète en JS plus récente. J'avais donc pour objectif de développer l'ensemble de l'application en modernisant la plateforme, d'offrir une meilleure expérience utilisateur sur différentes tailles d'écrans, tout en restant le plus fidèle possible aux maquettes fournies.",
-        "techno": [
-            "React",
-            "Node",
-            "Sass",
-            "Responsive Web Design",
-            "Figma"
-        ],
-        "repo": "https://github.com/AlexDDevv/P8-Kasa",
-        "website": "https://p8-kasa-sigma.vercel.app/",
-        "cover": "/Kasa.webp"
-    },
-    {
         "id": 3,
         "title": "Sophie Bluel",
-        "presentation": "Agence web ArchiWebos travaillant sur la conception du site portfolio d'une architecte d'intérieur.",
+        "presentation": "Projet formation OpenClassrooms: conception du site portfolio d'une architecte d'intérieur.",
         "description": "Conception du site portfolio d'une architecte d'intérieur.",
-        "objectif": "Travaillant comme développeur front-end pour l'agence, j'ai aidé l'équipe s'occupant de ce projet en étant chargé de développer plusieurs fonctionnalités importantes du site. Je devais notamment créer la page de présentation des travaux de l'architecte avec un système de filtre par catégories, la page de connexion sécurisée de l'administrateur, et d'une fenêtre modale pour ajouter et/ou supprimer un projet dans la galerie de présentation. Le tout a été généré dynamiquement avec Javascript et en communiquant avec une API",
+        "objectif": "Pour ce projet, je devais développer plusieurs fonctionnalités importantes du site. Je devais notamment créer la page de présentation des travaux de l'architecte avec un système de filtre par catégories, la page de connexion sécurisée de l'administrateur et une fenêtre modale pour ajouter et/ou supprimer un projet dans la galerie de présentation. Le tout a été généré dynamiquement avec Javascript et en communiquant avec une API.",
         "techno": [
             "HTML 5",
             "CSS 3",

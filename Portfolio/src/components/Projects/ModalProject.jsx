@@ -22,8 +22,8 @@ export default function ModalProject({ data, isOpen, setIsOpen }) {
                                 <img src={data.cover} alt="Image de présentation du projet" />
                             </div>
                             <div className="content-text">
-                                <div className="client">
-                                    <h4><span>Client:</span> {data.title}</h4>
+                                <div className="project">
+                                    <h4>{data.title}</h4>
                                     <p>{data.presentation}</p>
                                 </div>
                                 <div className="objectif">
