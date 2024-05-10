@@ -28,11 +28,11 @@
 
             .techno-list {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 grid-template-rows: repeat(2, 1fr);
                 align-items: center;
                 justify-items: center;
-                gap: 50px;
+                gap: 35px;
 
                 @media screen and (max-width: 768px) {
                     border-bottom: 1px solid var(--border);
@@ -46,17 +46,25 @@
                 }
     
                 .techno {
+                    @include center;
                     color: var(--textColor);
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                     opacity: 0;
                     transform: translateY(50px);
+
+                    &:nth-child(8) {
+                        i {
+                            font-size: 2.5rem;
+                            transform: rotate(45deg);
+                        }
+                    }
 
                     @media screen and (max-width: 768px) {
                         font-size: 3rem;
                     }
-    
+
                     &.active {
-                        animation: appear 0.7s ease-out forwards;
+                        animation: appear 0.9s ease-out forwards;
     
                         &:nth-child(2) {
                             animation-delay: 0.1s;
@@ -72,7 +80,6 @@
                         }
                         &:nth-child(6) {
                             animation-delay: 0.5s;
-                            @include center;
                         }
                         &:nth-child(7) {
                             animation-delay: 0.6s;
@@ -80,28 +87,50 @@
                         &:nth-child(8) {
                             animation-delay: 0.7s;
                         }
+                        &:nth-child(9) {
+                            animation-delay: 0.8s;
+                        }
+                        &:nth-child(10) {
+                            animation-delay: 0.9s;
+                        }
                     }
                 }
-                .redux {
-                    color: var(--textColor);
+                .ts {
+                    background: var(--textColor);
+                    border-radius: 8px;
+                    color: var(--bodyBg);
                     font-family: $bodyFont;
+                    font-size: 1.8rem;
                     font-style: normal;
-                    font-size: 1.5rem;
                     font-weight: 700;
+                    letter-spacing: 1px;
+                    padding-right: 4px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    width: 50px;
+                    height: 50px;
+
+                    @media screen and (max-width: 768px) {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 6px;
+                        font-size: 1.5rem;
+                    }
                 }
                 .ps {
                     background: var(--textColor);
                     border-radius: 8px;
                     color: var(--bodyBg);
                     font-family: $bodyFont;
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     font-style: normal;
                     font-weight: 700;
                     letter-spacing: 1px;
                     padding: 10px;
                     @include center;
-                    width: 56px;
-                    height: 56px;
+                    width: 50px;
+                    height: 50px;
 
                     @media screen and (max-width: 768px) {
                         height: 45px;
