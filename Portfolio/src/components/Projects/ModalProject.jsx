@@ -9,7 +9,9 @@ export default function ModalProject({ data, isOpen, setIsOpen }) {
     if (isOpen) {
         document.body.classList.add("antiScroll")
     } else {
-        document.body.classList.remove("antiScroll")
+        setTimeout(() => {
+            document.body.classList.remove("antiScroll")
+        }, 300);
     }
     
     return (
