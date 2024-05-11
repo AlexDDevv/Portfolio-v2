@@ -12,6 +12,7 @@
     transform: translateX(1000px);
     z-index: 1000;
     box-shadow: inset 5px 0 0 0 var(--border);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @media screen and (max-width: 768px) {
         overflow: scroll;
@@ -20,10 +21,12 @@
     }
 
     &.opened {
-        animation: appear 0.5s ease-out forwards;
+        opacity: 1;
+        transform: none;
     }
     &.closed {
-        animation: disappear 0.5s ease-out forwards;
+        opacity: 0;
+        transform: translateX(1000px);
     }
 
     .modal-container {

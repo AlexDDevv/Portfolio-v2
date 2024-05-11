@@ -9,10 +9,7 @@ export default function DisplayProject() {
 
     const selectProject = (data) => {
         setProjectSelected(data)
-
-        setTimeout(() => {
-            setIsOpen(true);
-          }, 0);
+        setIsOpen(!isOpen)
     }
     
     return (
