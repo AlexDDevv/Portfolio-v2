@@ -43,19 +43,6 @@ $bodyFont: 'Lato', sans-serif;
     --spanHoverModal: #1D2E62;
 }
 
-@keyframes appear {
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-@keyframes disappear {
-    100% {
-        opacity: 0;
-        transform: translateX(1000px);
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
